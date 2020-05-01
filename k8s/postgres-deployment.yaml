@@ -21,7 +21,8 @@ spec:
           image: postgres
           volumeMounts:
             - name: postgres-storage
-              mountPath: /var/lib/postgresql/pgtest              
+              mountPath: /var/lib/postgresql/pgtest
+              subPath: postgres
           ports:
             - containerPort: 5432
           env:
